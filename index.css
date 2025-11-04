@@ -1,0 +1,116 @@
+.animated {
+  display: flexbox;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: visible;
+  width: 400px;
+}
+
+@keyframes stretch {
+  0% {
+    transform: scaleY(1);
+    rotate: -25deg;
+  }
+  25% {
+    transform: scaleX(2);
+    rotate: 25deg;
+
+  }
+ 50% {
+    transform: scaleY(4);
+    rotate: initial;
+    rotate: -25deg;
+ 
+  }
+ 75% {
+    transform: scaleY(2);
+    rotate: initial;
+    rotate: 25deg;
+  }
+  100%{
+    transform: scaleX(1);
+      rotate: initial;
+      rotate: -25deg;
+  }
+}
+.Mimage{
+  position: absolute;
+  width: 200px;
+  opacity: 0.5;
+  top: 20%;
+
+}
+.flyer {
+  width: 200px;
+  position: absolute;
+  transform-origin: bottom;
+  animation: stretch 3s ease infinite;
+  left: 50px;
+  top: 300px;
+  contain: inherit;
+}
+@keyframes dog {
+  0% {
+    left: -250px;
+    rotate: 10deg;
+  }
+  25% {
+    rotate: -10deg;
+  }
+  50% {
+    rotate: 10deg;
+  }
+  75% {
+    rotate: -10deg;
+  }
+  100% {
+    rotate: 10deg;
+    left: 1500;
+  }
+}
+
+.dog {
+  width: 300px;
+  position: relative;
+  opacity: 6.1;
+  top: 750px;
+  left: 0px;
+
+} 
+
+@keyframes flyer {
+  0%{
+opacity: 0.1;
+  }25%{
+opacity: 0.8;
+  }50%{
+opacity: 1.1;
+  }75%{
+opacity: 0.8;
+  }100%{
+opacity: 0.1;
+  }
+}
+
+.flyerImage{
+width: inherit;
+position: absolute;
+animation: flyer 2s infinite;
+height: 38vh;
+top: 10px;
+}
+
+.flyerVideo{
+position: absolute;
+width: inherit;
+  opacity: 0.9;
+  top: 0%;
+}
+.breathing {
+  position: relative;
+  width: 300;
+  /* height: 200px; */
+  left: 400px;
+
+}

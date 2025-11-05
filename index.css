@@ -94,10 +94,10 @@ opacity: 0.1;
 }
 
 .flyerImage{
-width: inherit;
+width: 450px;
 position: absolute;
 animation: flyer 2s infinite;
-height: 500px;
+height: 469px;
 top: 10px;
 }
 
@@ -105,8 +105,9 @@ top: 10px;
 position: absolute;
 width: inherit;
   opacity: 0.9;
-  top: 0%;
+  top: -1%;
 height: 500px;
+left: 28px;
 }
 .breathing {
   position: relative;
